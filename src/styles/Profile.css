@@ -1,0 +1,78 @@
+/* Profile.css - Styling for the profile component */
+
+.profile {
+    display: flex;
+    gap: 2rem;
+    background-color: var(--card-bg);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .profile-image {
+    flex: 0 0 200px;
+  }
+  
+  .profile-image img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid var(--secondary-color);
+  }
+  
+  .profile-content {
+    flex: 1;
+  }
+  
+  .profile-content h2 {
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: 0.5rem;
+    margin-top: 0;
+  }
+  
+  .profile-content p {
+    margin-bottom: 1rem;
+    line-height: 1.7;
+    color: var(--text-secondary);
+  }
+  
+  .contact-info {
+    margin-top: 1.5rem;
+  }
+  
+  .contact-info p {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+  }
+  
+  .contact-info i {
+    margin-right: 0.8rem;
+    color: var(--secondary-color);
+  }
+  
+  .contact-info a {
+    color: var(--text-secondary);
+    transition: color 0.3s ease;
+  }
+  
+  .contact-info a:hover {
+    color: var(--secondary-color);
+  }
+  
+  @media (max-width: 768px) {
+    .profile {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    
+    .profile-image {
+      margin-bottom: 1.5rem;
+    }
+    
+    .contact-info p {
+      justify-content: center;
+    }
+  }

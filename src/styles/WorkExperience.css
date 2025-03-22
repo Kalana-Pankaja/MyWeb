@@ -1,0 +1,99 @@
+/* WorkExperience.css - Styling for the work experience component */
+
+.work-experience {
+    background-color: var(--card-bg);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .experience-card {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    margin-bottom: 1.5rem;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .experience-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .experience-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 1.2rem 1.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .experience-header h3 {
+    margin: 0;
+    color: var(--text-primary);
+    font-size: 1.3rem;
+  }
+  
+  .company {
+    color: var(--secondary-color);
+    font-weight: 500;
+    margin-top: 0.3rem;
+  }
+  
+  .period {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    margin-top: 0.3rem;
+  }
+  
+  .experience-controls {
+    display: flex;
+  }
+  
+  .experience-body {
+    padding: 1.2rem 1.5rem;
+  }
+  
+  .experience-body ul {
+    list-style-type: none;
+  }
+  
+  .experience-body ul li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 0.7rem;
+    color: var(--text-secondary);
+  }
+  
+  .experience-body ul li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: var(--secondary-color);
+  }
+  
+  .experience-footer {
+    padding: 1rem 1.5rem;
+    background-color: rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  
+  @media (max-width: 768px) {
+    .work-experience {
+      padding: 1.5rem;
+    }
+    
+    .experience-header {
+      padding: 1rem;
+    }
+    
+    .experience-body {
+      padding: 1rem;
+    }
+    
+    .experience-footer {
+      padding: 0.8rem 1rem;
+    }
+  }

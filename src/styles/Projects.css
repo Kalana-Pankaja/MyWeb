@@ -1,0 +1,115 @@
+/* Projects.css - Styling for the projects component */
+
+.projects {
+    background-color: var(--card-bg);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .project-card {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    margin-bottom: 1.5rem;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 1.2rem 1.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .project-header h3 {
+    margin: 0;
+    color: var(--text-primary);
+    font-size: 1.3rem;
+  }
+  
+  .project-controls {
+    display: flex;
+  }
+  
+  .project-body {
+    padding: 1.2rem 1.5rem;
+  }
+  
+  .project-body ul {
+    list-style-type: none;
+  }
+  
+  .project-body ul li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 0.7rem;
+    color: var(--text-secondary);
+  }
+  
+  .project-body ul li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: var(--secondary-color);
+  }
+  
+  .project-links {
+    padding: 0 1.5rem 1rem;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .project-link {
+    display: inline-flex;
+    align-items: center;
+    color: var(--secondary-color);
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .project-link i {
+    margin-right: 0.5rem;
+  }
+  
+  .project-link:hover {
+    color: var(--accent-color);
+  }
+  
+  .project-footer {
+    padding: 1rem 1.5rem;
+    background-color: rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  
+  @media (max-width: 768px) {
+    .projects {
+      padding: 1.5rem;
+    }
+    
+    .project-header {
+      padding: 1rem;
+    }
+    
+    .project-body {
+      padding: 1rem;
+    }
+    
+    .project-links {
+      padding: 0 1rem 0.8rem;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    
+    .project-footer {
+      padding: 0.8rem 1rem;
+    }
+  }
