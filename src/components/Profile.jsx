@@ -5,7 +5,7 @@ function Profile() {
   return (
     <section className="profile">
       <div className="profile-image">
-        <img src="/images/profile.jpg" alt="Kalana Liyanage" />
+        <img src="public\profile.jpg" alt="Kalana Liyanage" />
       </div>
       <div className="profile-content">
         <h2>About Me</h2>
