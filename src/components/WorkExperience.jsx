@@ -16,7 +16,7 @@ function WorkExperience() {
     },
     {
         title: 'Freelancer',
-        company: 'Fiver',
+        company: 'Fiverr',
         period: '2018 - present',
         description: [
           'Created logos and designs for clients',
